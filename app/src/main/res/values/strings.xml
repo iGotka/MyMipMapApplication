@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyMipMapApplication</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_reg">Regions</string>
+    <string name="title_auth">Authoriation</string>
 </resources>

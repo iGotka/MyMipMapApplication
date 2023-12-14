@@ -7,11 +7,14 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.mymipmapapplication.R
 import com.example.mymipmapapplication.activities.main.MainActivity
 import com.example.mymipmapapplication.datasource.ServiceBuilder
 import com.example.mymipmapapplication.interfaces.UserInterface
 import com.example.mymipmapapplication.model.users.ApiResponseUsers
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import retrofit2.Call
 import retrofit2.Response
 
@@ -19,8 +22,12 @@ class LoginActivity : AppCompatActivity() {
     private var resultQuery:Boolean?=false
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val navView: BottomNavigationView = findViewById(R.id.nav_view)
+        val navController = findNavController(R.id.nav_auth_fragment)
+        navView.setupWithNavController(navController)
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_auth)
+        setContentView(R.layout.fragment_auth)
         val signIn : Button = findViewById(R.id.singInBtn)
         val loginLayout : EditText = findViewById(R.id.loginEitText)
         val passwordLayout : EditText = findViewById(R.id.passwordEditText)
@@ -58,5 +65,6 @@ class LoginActivity : AppCompatActivity() {
         } else{
             Toast.makeText(this,"Не все поля заполнены", Toast.LENGTH_LONG).show()
         }
+
     }
 }
