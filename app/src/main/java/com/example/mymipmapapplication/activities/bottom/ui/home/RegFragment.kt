@@ -14,7 +14,7 @@ class RegFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val root = inflater.inflate(R.layout.fragment_reg, container, false)
+        val root = inflater.inflate(R.layout.fragment_countries, container, false)
 
 
         return root

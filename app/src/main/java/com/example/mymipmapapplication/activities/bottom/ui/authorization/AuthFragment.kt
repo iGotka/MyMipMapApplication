@@ -14,8 +14,9 @@ class AuthFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val root = inflater.inflate(R.layout.fragment_auth, container, false)
+        val root = inflater.inflate(R.layout.fragment_login, container, false)
 
         return root
     }
+
 }

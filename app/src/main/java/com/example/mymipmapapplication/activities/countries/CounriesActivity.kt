@@ -7,6 +7,6 @@ import com.example.mymipmapapplication.R
 class CounriesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_counries)
+        setContentView(R.layout.activity_countries)
     }
 }

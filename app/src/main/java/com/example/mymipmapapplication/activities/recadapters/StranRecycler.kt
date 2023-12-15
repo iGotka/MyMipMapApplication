@@ -4,8 +4,6 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mymipmapapplication.R
 
@@ -21,7 +19,7 @@ class StranRecycler(val context: Context, val list: ArrayList<stran>): RecyclerV
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyVH {
-        val root = LayoutInflater.from(context).inflate(R.layout.stran_adapter,parent,false)
+        val root = LayoutInflater.from(context).inflate(R.layout.country_adapter,parent,false)
         return MyVH(root)
     }
 

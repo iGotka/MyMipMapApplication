@@ -9,11 +9,11 @@ import retrofit2.http.Query
 
 interface UserInterface {
     @Headers("Content-Type:application/json")
-    @GET("profile_users/")
-    fun getUser(@Query("login")login:String): Call<Users>
+    @GET("users/")
+    fun getUser(@Query("login")login:String): Call<ApiResponseUsers>
 
     @Headers("Content-Type:application/json")
-    @GET("profile_users/")
+    @GET("users/")
     fun getAuth(
         @Query("login")login:String,
         @Query("password")password:String

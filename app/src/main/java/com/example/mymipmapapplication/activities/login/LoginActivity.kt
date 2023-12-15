@@ -8,13 +8,11 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.navigation.findNavController
-import androidx.navigation.ui.setupWithNavController
 import com.example.mymipmapapplication.R
 import com.example.mymipmapapplication.activities.main.MainActivity
 import com.example.mymipmapapplication.datasource.ServiceBuilder
 import com.example.mymipmapapplication.interfaces.UserInterface
 import com.example.mymipmapapplication.model.users.ApiResponseUsers
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import retrofit2.Call
 import retrofit2.Response
 
@@ -22,19 +20,19 @@ class LoginActivity : AppCompatActivity() {
     private var resultQuery:Boolean?=false
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val navView: BottomNavigationView = findViewById(R.id.nav_view)
-        val navController = findNavController(R.id.nav_auth_fragment)
-        navView.setupWithNavController(navController)
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_auth)
+
+        setContentView(R.layout.fragment_login)
         val signIn : Button = findViewById(R.id.singInBtn)
         val loginLayout : EditText = findViewById(R.id.loginEitText)
         val passwordLayout : EditText = findViewById(R.id.passwordEditText)
         signIn.setOnClickListener{
             val login=loginLayout.text.toString().trim()
             val password=passwordLayout.text.toString().trim()
-            Sign(login,password) }
+            Sign(login,password)
+            Log.e("рп","Ок")
+        }
     }
 
     private fun Sign(login: String, password: String) {

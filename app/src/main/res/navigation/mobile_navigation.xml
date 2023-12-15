@@ -9,7 +9,7 @@
         android:id="@+id/navigation_menu"
         android:name="com.example.mymipmapapplication.activities.bottom.ui.home.RegFragment"
         android:label="@string/title_menu"
-        tools:layout="@layout/fragment_reg" />
+        tools:layout="@layout/fragment_countries" />
 
     <fragment
         android:id="@+id/navigation_reg"
@@ -21,5 +21,5 @@
         android:id="@+id/navigation_auth"
         android:name="com.example.mymipmapapplication.activities.bottom.ui.authorization.AuthFragment"
         android:label="@string/title_auth"
-        tools:layout="@layout/fragment_auth" />
+        tools:layout="@layout/fragment_login" />
 </navigation>
