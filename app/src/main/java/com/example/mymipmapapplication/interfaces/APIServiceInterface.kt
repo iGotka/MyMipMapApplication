@@ -21,7 +21,7 @@ interface APIServiceInterface {
     @GET("Regions/id")
     fun getRegionsById(@Path("id_regions") id_regions : Int): Call<ApiResponseRegions>
 
-    @GET("User/id")
+    @GET("Users/id")
     fun getUserById(@Path("id") id : Int): Call<ApiResponseUsers>
     @GET("User")
     fun getUser(): Call<ApiResponseUsers>

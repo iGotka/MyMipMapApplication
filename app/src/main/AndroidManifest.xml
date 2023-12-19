@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MyMipMapApplication"
         tools:targetApi="31">
         <activity
+            android:name=".activities.login.SignInActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.menu.MenuActivity"
             android:exported="true">
             <intent-filter>
@@ -23,8 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".activities.bottom.BottomActivity"
             android:exported="false"
@@ -37,9 +38,7 @@
             android:exported="false" />
         <activity
             android:name=".activities.main.MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>

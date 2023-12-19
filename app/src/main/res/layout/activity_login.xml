@@ -5,6 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.login.LoginActivity">
+<!--    <LinearLayout-->
+<!--        android:layout_margin="25dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:padding="20dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+<!--        <TextView-->
+<!--            android:id="@+id/titleTextView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Авторизация"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+<!--        <EditText-->
+<!--            android:id="@+id/loginEitText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="text"-->
+<!--            android:hint="Логин" />-->
+<!--        <EditText-->
+<!--            android:id="@+id/passwordEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:hint="Пароль" />-->
+<!--        <Button-->
+<!--            android:id="@+id/singInBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ОК"-->
+<!--            android:backgroundTint="@color/black" />-->
+<!--    </LinearLayout>-->
 
     <fragment
         android:id="@+id/nav_auth_fragment"
