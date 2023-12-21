@@ -7,12 +7,17 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mymipmapapplication.R
+import com.example.mymipmapapplication.adapters.CountriesAdapter
+import com.example.mymipmapapplication.interfaces.APIServiceInterface
+import com.example.mymipmapapplication.model.counties.Countries
 
 
 class MenuFragment : Fragment() {
-
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: CountriesAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -20,10 +25,13 @@ class MenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val root = inflater.inflate(R.layout.fragment_menu, container, false)
-        val stran_recycler: RecyclerView = root.findViewById(R.id.stran_rec)
-        stran_recycler.adapter
+        recyclerView = root.findViewById(R.id.countryRecycler)
+        recyclerView.layoutManager = LinearLayoutManager(context)
+
         return root
     }
+
+
 
 
 }
