@@ -14,7 +14,7 @@ import retrofit2.http.Query
 interface APIServiceInterface {
     /*Города*/
     @GET("Countries/")
-    fun getCountries(): Call<ApiResponseCountries>
+    fun getCountries(): Collection<Countries>
 
     @GET("Countries/")
     fun getAllCountries(): Call<List<Countries>>
@@ -25,11 +25,5 @@ interface APIServiceInterface {
     @GET("Regions/id")
     fun getRegionsById(@Path("id_regions") id_regions : Int): Call<ApiResponseRegions>
 
-    @Headers("Content-Type:application/json")
-    @GET("Users/")
-    fun getAuth(
-        @Query("login")login: String,
-        @Query("password")password:String
-    ): Call<Users>
 
 }

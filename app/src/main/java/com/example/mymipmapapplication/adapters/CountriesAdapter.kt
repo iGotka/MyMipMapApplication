@@ -35,7 +35,6 @@ class CountriesAdapter (
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             holder.id_state.text = list[position].id.toString()
             holder.countries.text = list[position].countries
-
             holder.fullname.text = list[position].fullname
             holder.flag.setImageResource(list[position].flag.hashCode())
         }
